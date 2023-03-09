@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+}
+
+.box-one {
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin-right: 30px;
+}
+
+.box-one::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 25px;
+  left: 300px;
+  background-image: url(./images/second-course.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 10;
+}
+
+.box-two {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
